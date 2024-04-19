@@ -1,9 +1,10 @@
 import { Bounce, toast } from "react-toastify";
 import { positions } from "./Datas";
-
+//Hàm check 1 object có null hay không:
 export const isObjectEmpty = (obj) => {
   return Object.keys(obj).length === 0;
 };
+//Hàm xác định tất cả vị trí có thể di chuyển và ăn của một quân cờ bất kỳ
 export const possiblePossitions = (chess, chesses, totalTurn) => {
   switch (chess.name) {
     case "K":
@@ -775,6 +776,7 @@ export const possiblePossitions = (chess, chesses, totalTurn) => {
       return {};
   }
 };
+//Hàm xác định style của các ô trên bàn cờ:
 export const findIdforPosisitionStyle = (possibles, possition) => {
   if (!isObjectEmpty(possibles)) {
     if (possibles.moves.length > 0 && possibles.eats.length > 0) {
@@ -846,6 +848,7 @@ export const findIdforPosisitionStyle = (possibles, possition) => {
     }
   }
 };
+// Hàm thông báo:
 export const notifyWinning = (text) =>
   toast.success(text, {
     position: "top-center",

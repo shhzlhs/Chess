@@ -1,3 +1,4 @@
+// Tạo bàn cờ 64 ô với chỉ số i (hàng) và j (cột):
 export const positions = [];
 for (let i = 0; i < 64; i++) {
   positions.push({
@@ -14,6 +15,7 @@ for (let i = 0; i < 64; i++) {
         : "black",
   });
 }
+//Các quân trắng ban đầu với vị trí i (hàng), j (cột) ban đầu:
 export const baseWhiteChesses = [
   { img: "WK.png", id: 1, name: "K", color: 1, i: 1, j: 4, moves: [], turn: 0 },
   { img: "WC.png", id: 2, name: "C", color: 1, i: 1, j: 1, moves: [], turn: 0 },
@@ -95,6 +97,7 @@ export const baseWhiteChesses = [
     turn: 0,
   },
 ];
+//Các quân đen ban đầu với vị trí i (hàng), j (cột) ban đầu:
 export const baseBlackChesses = [
   {
     img: "BK.png",
