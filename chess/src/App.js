@@ -360,6 +360,7 @@ function App() {
   return (
     <>
       <div className="App">
+      {/* Nhà tù trắng (chỗ chứa quân đen bị ăn) :) */}
         <WhitePrison blackChessesBeEaten={blackChessesBeEaten} />
         <div>
           <div className="baseFlex">
@@ -393,6 +394,7 @@ function App() {
             {items}
           </div>
         </div>
+        {/* Nhà tù đen (chỗ chứa quân trắng bị ăn) :) */}
         <BlackPrison whiteChessesBeEaten={whiteChessesBeEaten} />
       </div>
       <ToastContainer />
